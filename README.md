@@ -5,4 +5,7 @@ This repo contains a weather application that allows a user to search weather co
 
 ## Usage
 
-![Deployed Site](https://github.com/Bryant0415/Weather-App/blob/main/assets/Untitled_%20Nov%2010%2C%202022%204_50%20PM.gif)
+![Gif](https://github.com/Bryant0415/Weather-App/blob/main/assets/Untitled_%20Nov%2010%2C%202022%204_50%20PM.gif)
+
+## Deployed Site
+[Deployed Site](https://bryant0415.github.io/Weather-App/)
