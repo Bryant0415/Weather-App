@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/style.css" />
+    <title>5 Day Weather Forecast</title>
+  </head>
+  <!--GIVEN a weather dashboard with form inputs-->
+  <body>
+    <header>
+      <h1>Weather Dashboard</h1>
+    </header>
+    <!--Search Window-->
+    <div class="row">
+      <div class="column-left">
+        <h3>Search for a City:</h3>
+        <div class="input">
+
+          <form>
+          <input type="text" placeholder="San Diego" class="cityInput" list="searchdata" id="searchedCities"/> <br />
+        </form>
+        </div>
+        <button class="submit" id="submit" value="submit">Search</button>
+        <hr />
+
+      <!--Recent searches-->
+      <ul id="userInput">
+      </ul>
+      </div>
+
+      <!--Current Search-->
+      <div class="column-right" style="display:none" id="columnRight">
+        <div class="container">
+          <h2 class="currentCity" id="currentCity"></h2>
+          <p class="currentDate" id="currentDate"></p>
+          <img
+            src="http://openweathermap.org/img/wn/01d@2x.png"
+            alt="icon of the weather"
+          />
+          <ul>
+            <li class="currentTemp" id="currentTemp"><p></p></li>
+            <li class="currentWind" id="currentWind"><p></p></li>
+            <li class="currentHumidity" id="currentHumidity"><p></p></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!--5 Day Forecast of Current Search-->
+    <div class="row2" style="display:none" id="row2">
+      <h4>5-Day Forecast:</h4>
+    </div>
+    <div class="row3" style ="display:none" id="row3">
+      <div class="card" id="card1">
+        <p class="forecastDate1" id="forecastDate1"></p>
+        <img
+          width="50"
+          height="50"
+          src="http://openweathermap.org/img/wn/01d@2x.png"
+          alt="icon of the weather"
+        />
+        <ul>
+          <li class="forecastTemp1" id="forecastTemp1"></li>
+          <li class="forecastWind1" id="forecastWind1"></li>
+          <li class="forecastHumidity1" id="forecastHumidity1"></li>
+        </ul>
+      </div>
+      <div class="card" id="card2">
+        <p class="forecastDate2" id="forecastDate2"></p>
+        <img
+          width="50"
+          height="50"
+          src="http://openweathermap.org/img/wn/01d@2x.png"
+          alt="icon of the weather"
+        />
+        <ul>
+          <li class="forecastTemp2" id="forecastTemp2"></li>
+          <li class="forecastWind2" id="forecastWind2"></li>
+          <li class="forecastHumidity2" id="forecastHumidity2"></li>
+        </ul>
+      </div>
+      <div class="card" id="card3">
+        <p class="forecastDate3" id="forecastDate3"></p>
+        <img
+          width="50"
+          height="50"
+          src="http://openweathermap.org/img/wn/01d@2x.png"
+          alt="icon of the weather"
+        />
+        <ul>
+          <li class="forecastTemp3" id="forecastTemp3"></li>
+          <li class="forecastWind3" id="forecastWind3"></li>
+          <li class="forecastHumidity3" id="forecastHumidity3"></li>
+        </ul>
+      </div>
+      <div class="card" id="card4">
+        <p class="forecastDate4" id="forecastDate4"></p>
+        <img
+          width="50"
+          height="50"
+          src="http://openweathermap.org/img/wn/01d@2x.png"
+          alt="icon of the weather"
+        />
+        <ul>
+          <li class="forecastTemp4" id="forecastTemp4"></li>
+          <li class="forecastWind4" id="forecastWind4"></li>
+          <li class="forecastHumidity4" id="forecastHumidity4"></li>
+        </ul>
+      </div>
+      <div class="card" id="card5">
+        <p class="forecastDate5" id="forecastDate5"></p>
+        <img
+          width="50"
+          height="50"
+          src="http://openweathermap.org/img/wn/01d@2x.png"
+          alt="icon of the weather"
+        />
+        <ul>
+          <li class="forecastTemp5" id="forecastTemp5"></li>
+          <li class="forecastWind5" id="forecastWind5"></li>
+          <li class="forecastHumidity5" id="forecastHumidity5"></li>
+        </ul>
+      </div>
+    </div>
+    <script src="./assets/javascript.js"></script>
+  </body>
+</html>
